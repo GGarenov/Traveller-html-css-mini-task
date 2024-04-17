@@ -1,18 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-.site-section.banner {
-  background: black;
+html {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
 }
-.site-section.banner .container {
-  border: 2px solid black;
-  color: white;
+
+body {
+  background-image: url("/03.Traveler/03.Traveler_Resources/images/poster.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cormorant Infant", serif;
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1920px;
   margin: 0 auto;
+}
+
+.site-section.banner {
+  height: 100vh;
+}
+.site-section.banner .container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.site-section.banner h1 {
+  font-size: 111px;
+}
+.site-section.banner .container p {
+  margin-top: 170px;
+}
+
+.site-section.testimonial .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust this value as needed */
+}
+.site-section.testimonial .container h1 {
+  align-items: center;
+  font-size: 80px;
+}
+
+P {
+  font-size: 22px;
+}
+
+.site-section {
+  padding: 2em;
+}
+
+.site-section.testimonial {
+  background: #f8f0e9;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+
+  /* background: black; */
+}
+
+.site-header nav ul {
+  display: flex;
+  list-style: none outside;
+}
+
+.site-title a {
+  display: block;
+  width: 120px;
+  height: 80px;
+  overflow: hidden;
+  text-indent: -200vw;
+  background-image: url("/03.Traveler/03.Traveler_Resources/images/logo.webp");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.site-section.support {
+  background: #e14747;
+}
+
+.site-section.mind {
+  background: #f8f0e9;
+}
+
+.site-section.mind img {
+  width: 625px;
+  height: 468px;
+}
+
+.site-section.local {
+  background: #e14747;
+}
+
+.site-footer {
+  background: #352b2a;
+  color: white;
 }
